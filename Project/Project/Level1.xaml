@@ -8,10 +8,12 @@
     mc:Ignorable="d">
 
     <Grid Background="Green">
+        <Image Stretch="Fill" VerticalAlignment="Center" HorizontalAlignment="Center" Source="Images/Background.jpg"/>
         <StackPanel>
             <TextBlock Text="🔴Red Or Blue🔵" FontSize="20" HorizontalAlignment="Center" />
+            <Button Content="Back" FontSize="30" Click="Button_Click" VerticalAlignment="Top"/>
         </StackPanel>
-         <Button Content="Back" FontSize="30" Click="Button_Click" VerticalAlignment="Top"/>
+        
        
     </Grid>
 </Page>
