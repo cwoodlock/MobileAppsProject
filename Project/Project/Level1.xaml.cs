@@ -117,7 +117,7 @@ namespace Project
             
         }//End addBorders
 
-        private void setupThePieces()
+        private void setupThePieces()   //Adapted from code we got in the labs
         {
             // check the size of board and decide how many cats, how many mice
 
@@ -193,19 +193,12 @@ namespace Project
 
                     //cat.Tapped += El1_Tapped;
                     board.Children.Add(redEl);
-                }
-
-
-
-
-
-
-                //cat.Tapped += El1_Tapped;
-                //board.Children.Add(blueEl);
+                }//end for
+               
             }
 
 
-        }
+        } //end setUpThePieces
 
         private static int randomNum()
         {
@@ -213,29 +206,6 @@ namespace Project
             int num = rnd.Next(1, 5);
             return num;
         }//End randomNum
-
-        private static Ellipse createRedCircles()
-        {
- 
-            Ellipse redEllipse = new Ellipse();
-            redEllipse.Height = 50;
-            redEllipse.Width = 50;
-            redEllipse.StrokeThickness = 2;
-            redEllipse.Stroke = new SolidColorBrush(Windows.UI.Colors.Black);
-            redEllipse.Fill = new SolidColorBrush(Windows.UI.Colors.Red);
-            return redEllipse;
-        }//End addRedCircles
-
-        private static Ellipse createBlueCircles()
-        {
-            Ellipse blueEllipse = new Ellipse();
-            blueEllipse.Height = 50;
-            blueEllipse.Width = 50;
-            blueEllipse.StrokeThickness = 2;
-            blueEllipse.Stroke = new SolidColorBrush(Windows.UI.Colors.Black);
-            blueEllipse.Fill = new SolidColorBrush(Windows.UI.Colors.Blue);
-            return blueEllipse;
-        }//End addBlueCircles
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
