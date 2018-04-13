@@ -9,6 +9,7 @@
 
     <Grid x:Name="gridRoot">
         <Image Stretch="Fill" VerticalAlignment="Center" HorizontalAlignment="Center" Source="Images/Background.jpg"/>
+        <MediaElement x:Name="playSound" Source="Music/bensound-summer.mp3" AutoPlay="True" Height="0" Width="0"  />
         <StackPanel>
             <TextBlock Text="🔴Red Or Blue🔵" FontSize="20" HorizontalAlignment="Center" />
             <Button Content="Back" FontSize="30" Click="Button_Click" VerticalAlignment="Top"/>

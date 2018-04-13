@@ -9,12 +9,13 @@
 
     <Grid x:ConnectionId='1' x:Name="gridRoot">
         <Image Stretch="Fill" VerticalAlignment="Center" HorizontalAlignment="Center" Source="Images/Background.jpg"/>
+        <MediaElement x:ConnectionId='2' x:Name="playSound" Source="Music/bensound-summer.mp3" AutoPlay="True" Height="0" Width="0"  />
         <StackPanel>
             <TextBlock Text="🔴Red Or Blue🔵" FontSize="20" HorizontalAlignment="Center" />
-            <Button x:ConnectionId='4' Content="Back" FontSize="30"                      VerticalAlignment="Top"/>
+            <Button x:ConnectionId='5' Content="Back" FontSize="30"                      VerticalAlignment="Top"/>
         </StackPanel>
-        <Grid x:ConnectionId='2' x:Name="gridGame" MaxHeight="600" MaxWidth="600" Grid.Column="1"/>
-        <Grid x:ConnectionId='3' x:Name="gridBoard" MaxHeight="600" MaxWidth="600" Grid.Column="1"/>
+        <Grid x:ConnectionId='3' x:Name="gridGame" MaxHeight="600" MaxWidth="600" Grid.Column="1"/>
+        <Grid x:ConnectionId='4' x:Name="gridBoard" MaxHeight="600" MaxWidth="600" Grid.Column="1"/>
 
 
    </Grid>

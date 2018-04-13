@@ -31,12 +31,10 @@ namespace Project
         {
             this.InitializeComponent();
 
+            playSound.Play();
             addBorders();
             setupThePieces();
 
-            //randomNum();
-            //Ellipse el1 = createBlueCircles();
-            //Ellipse el2 = createRedCircles();
         }
 
         private void addBorders() //Adapted from code given to us in labs
@@ -127,7 +125,6 @@ namespace Project
             Ellipse blueEl;
             Grid board = FindName("GridGame") as Grid;
 
-           
             
             int iR, iC;
             for (iR = 0; iR < row; iR++) // on each row

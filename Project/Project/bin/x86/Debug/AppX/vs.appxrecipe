@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-13T15:10:18.398</Modified>
+      <Modified>2018-04-13T15:15:56.410</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\bin\x86\Debug\Project.exe">
       <PackagePath>entrypoint\Project.exe</PackagePath>
-      <Modified>2018-04-13T15:10:18.177</Modified>
+      <Modified>2018-04-13T15:15:55.850</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\g00341460\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -452,6 +452,10 @@
       <PackagePath>Images\Background.jpg</PackagePath>
       <Modified>2018-04-13T12:12:57.632</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\Music\bensound-summer.mp3">
+      <PackagePath>Music\bensound-summer.mp3</PackagePath>
+      <Modified>2018-04-13T15:13:30.335</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2018-04-13T12:12:57.636</Modified>
@@ -492,7 +496,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\bin\x86\Debug\Project.xr.xml">
       <PackagePath>Project.xr.xml</PackagePath>
-      <Modified>2018-04-13T14:02:32.331</Modified>
+      <Modified>2018-04-13T15:15:55.613</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -500,11 +504,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2018-04-13T14:39:21.378</Modified>
+      <Modified>2018-04-13T15:15:56.235</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\bin\x86\Debug\Core\Project.exe">
       <PackagePath>Project.exe</PackagePath>
-      <Modified>2018-04-13T15:10:18.394</Modified>
+      <Modified>2018-04-13T15:15:56.407</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
