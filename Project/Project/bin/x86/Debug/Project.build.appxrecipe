@@ -334,14 +334,45 @@
     <AppxPackagedFile Include="C:\Users\g00341460\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\Images\Background.jpg">
-      <PackagePath>Images\Background.jpg</PackagePath>
+    <AppxPackagedFile Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\Music\bensound-summer.mp3">
-      <PackagePath>Music\bensound-summer.mp3</PackagePath>
+    <AppxPackagedFile Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\Assets\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\Assets\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\Assets\Square71x71Logo.scale-100.png">
+      <PackagePath>Assets\Square71x71Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\Assets\Square71x71Logo.scale-125.png">
+      <PackagePath>Assets\Square71x71Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\Assets\Square71x71Logo.scale-150.png">
+      <PackagePath>Assets\Square71x71Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\Assets\Square71x71Logo.scale-200.png">
+      <PackagePath>Assets\Square71x71Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\Assets\Square71x71Logo.scale-400.png">
+      <PackagePath>Assets\Square71x71Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\Assets\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -369,6 +400,15 @@
     <AppxPackagedFile Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\Images\Background.jpg">
+      <PackagePath>Images\Background.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\Music\bensound-summer.mp3">
+      <PackagePath>Music\bensound-summer.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\bin\x86\Debug\Project.xr.xml">
       <PackagePath>Project.xr.xml</PackagePath>

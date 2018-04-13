@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="36554cwoodlock.RedOrBlue" Publisher="CN=F5E839EA-E1BD-4FF4-8B46-833D67B4770D" Version="1.1.0.0" />
+  <Identity Name="36554cwoodlock.RedOrBlue" Publisher="CN=g00341460" Version="1.1.1.0" />
   <mp:PhoneIdentity PhoneProductId="685954b4-8b2c-4efc-9e3f-7128d7761a10" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>RedOrBlue</DisplayName>

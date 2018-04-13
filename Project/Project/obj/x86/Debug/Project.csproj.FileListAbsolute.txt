@@ -397,3 +397,4 @@ C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\obj\x86\Deb
 C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\obj\x86\Debug\Level2.g.cs
 C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\obj\x86\Debug\Level2.xaml
 C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\obj\x86\Debug\Level2.xbf
+C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\bin\x86\Debug\Core\ForBundle\AppxManifest.xml
