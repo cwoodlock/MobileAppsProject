@@ -13,8 +13,8 @@
             <TextBlock Text="🔴Red Or Blue🔵" FontSize="20" HorizontalAlignment="Center" />
             <Button x:ConnectionId='4' Content="Back" FontSize="30"                      VerticalAlignment="Top"/>
         </StackPanel>
-        <Grid x:ConnectionId='2' x:Name="gridGame" MaxHeight="300" MaxWidth="300" Grid.Column="1"></Grid>
-        <Grid x:ConnectionId='3' x:Name="gridBoard" MaxHeight="300" MaxWidth="300" Grid.Column="1"></Grid>
+        <Grid x:ConnectionId='2' x:Name="gridGame" MaxHeight="600" MaxWidth="600" Grid.Column="1"/>
+        <Grid x:ConnectionId='3' x:Name="gridBoard" MaxHeight="600" MaxWidth="600" Grid.Column="1"/>
 
 
    </Grid>
