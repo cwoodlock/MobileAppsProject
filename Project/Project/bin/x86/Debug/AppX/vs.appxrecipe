@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-13T14:26:28.967</Modified>
+      <Modified>2018-04-13T14:46:35.907</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\bin\x86\Debug\Project.exe">
       <PackagePath>entrypoint\Project.exe</PackagePath>
-      <Modified>2018-04-13T14:26:28.758</Modified>
+      <Modified>2018-04-13T14:46:35.695</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\g00341460\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -500,11 +500,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2018-04-13T14:04:56.295</Modified>
+      <Modified>2018-04-13T14:39:21.378</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\bin\x86\Debug\Core\Project.exe">
       <PackagePath>Project.exe</PackagePath>
-      <Modified>2018-04-13T14:26:28.964</Modified>
+      <Modified>2018-04-13T14:46:35.904</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -24,11 +24,15 @@ namespace Project
     /// </summary>
     public sealed partial class Level1 : Page
     {
+        int row = 5;
+        int size = 75;
+
         public Level1()
         {
             this.InitializeComponent();
 
             addBorders();
+            setupThePieces();
 
             //randomNum();
             //Ellipse el1 = createBlueCircles();
@@ -36,23 +40,14 @@ namespace Project
         }
 
         private void addBorders() //Adapted from code given to us in labs
-        {
-            int row = 5;
-            int size = 75;
+        {   
             
-            try
-            {
-               gridBoard.Children.Remove(FindName("ChessBoard") as Grid);
-            }
-            catch
-            {
-            }
             // create a grid object
             Grid grdBoard = new Grid();
 
             // give it a name, size, horizontal alignment, vertical align
             // give it background colour, margin of 5, Grid.row = 1
-            grdBoard.Name = "ChessBoard";
+            grdBoard.Name = "GridGame";
 
             //Set vertical and horizontal allignment
             grdBoard.HorizontalAlignment = HorizontalAlignment.Center;
@@ -63,7 +58,7 @@ namespace Project
             grdBoard.Width = size * row;
             
             //Set the background colour of the grid
-            grdBoard.Background = new SolidColorBrush(Colors.Gray);
+            grdBoard.Background = new SolidColorBrush(Colors.Transparent);
 
             grdBoard.SetValue(Grid.ColumnProperty, 1);
             grdBoard.SetValue(Grid.RowProperty, 1);
@@ -108,7 +103,7 @@ namespace Project
                     brdr.SetValue(Grid.ColumnProperty, iC);
 
                     // give it a background colour
-                    brdr.Background = new SolidColorBrush(Colors.Red);
+                    brdr.Background = new SolidColorBrush(Colors.Transparent);
                     if (0 == (iR + iC) % 2)
                     {
                         brdr.Background = new SolidColorBrush(Colors.Transparent);
@@ -122,10 +117,86 @@ namespace Project
             
         }//End addBorders
 
+        private void setupThePieces()
+        {
+            // check the size of board and decide how many cats, how many mice
+
+            int numRed = 5;
+            Ellipse redEl;
+            Grid board = FindName("GridGame") as Grid;
+
+           
+            for (int i = 0; i < numRed; i++)
+            {
+                redEl = new Ellipse();
+
+                //Give the elipse a name
+                redEl.Name = "red" + (i + 1).ToString();
+
+                //give the elipse a size
+                redEl.Height = size * 0.85;
+                redEl.Width = size * 0.85;
+
+                //Set the vertical and horizontal alignment
+                redEl.HorizontalAlignment = HorizontalAlignment.Center;
+                redEl.VerticalAlignment = VerticalAlignment.Center;
+
+                //Set a colour for the ellipse
+                redEl.Fill = new SolidColorBrush(Colors.Red);
+
+                int rand = randomNum();
+
+                redEl.SetValue(Grid.RowProperty, (rand*i));
+
+              
+                redEl.SetValue(Grid.ColumnProperty, i * 2);
+              
+                //cat.Tapped += El1_Tapped;
+                board.Children.Add(redEl);
+            }
+            // mouse = green ellipse, same width
+            // create _rows number of ellipses for cats
+            // create one for the mouse
+            Ellipse mouse = new Ellipse();
+            mouse.Name = "theMouse";
+            mouse.Height = size * 0.75;
+            mouse.Width = size * 0.75;
+            mouse.HorizontalAlignment = HorizontalAlignment.Center;
+            mouse.VerticalAlignment = VerticalAlignment.Center;
+            mouse.Fill = new SolidColorBrush(Colors.Green);
+            mouse.SetValue(Grid.RowProperty, 0);
+            if (row % 2 == 1)
+            {
+                mouse.SetValue(Grid.ColumnProperty, 1);
+            }
+            else
+            {
+                mouse.SetValue(Grid.ColumnProperty, 2);
+            }
+            //mouse.Tapped += El1_Tapped;
+            board.Children.Add(mouse);
+
+            // decide where to place on the board
+            // need one method to move a piece
+            //Ellipse cat;    // name = "cat" + _rows
+
+            // add event handler to el1
+            foreach (var item in board.Children)
+            {
+                if (item.GetType() == typeof(Ellipse))
+                {
+
+                }
+
+            }
+
+
+        }
+
         private static int randomNum()
         {
             Random rnd = new Random();
-            int num = rnd.Next(1, 10);
+            int num = rnd.Next(1, 5);
             return num;
         }//End randomNum
 
