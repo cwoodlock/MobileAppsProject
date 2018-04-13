@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -44,10 +45,29 @@ namespace Project
                 for (iC = 0; iC < 8; iC++)
                 {
                     Border b = new Border();
-                    Border outOfBounds = new Border();
 
                     //To get the position of the pieces on the board we must name the positions
                     b.Name = iR.ToString() + "_" + iC.ToString();
+
+                    //Set the colour of the border
+                    b.Background = new SolidColorBrush(Colors.Honeydew);
+
+                    //Set the page up for now like a chessboard so as to get my head around the logic
+                    if((iR + iC) % 2 == 0)
+                    {
+                        b.Background = new SolidColorBrush(Colors.HotPink);
+                    }
+
+                    b.SetValue(Grid.RowProperty, iR);
+                    b.SetValue(Grid.ColumnProperty, iC);
+
+                    b.HorizontalAlignment = HorizontalAlignment.Center;
+                    b.VerticalAlignment = VerticalAlignment.Center;
+
+                    b.Height = 10;
+                    b.Width = 10;
+
+                    gridBoard.Children.Add(b);
                 }
             }
             
