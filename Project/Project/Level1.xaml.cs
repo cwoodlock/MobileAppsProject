@@ -122,72 +122,86 @@ namespace Project
             // check the size of board and decide how many cats, how many mice
 
             int numRed = 5;
+            int numBlue = 20;
             Ellipse redEl;
+            Ellipse blueEl;
             Grid board = FindName("GridGame") as Grid;
 
            
+            
+            int iR, iC;
+            for (iR = 0; iR < row; iR++) // on each row
+            {
+                for (iC = 0; iC < row; iC++)  // for each col on that row
+                {
+                    for (int i = 0; i < numBlue; i++)
+                    {
+                        blueEl = new Ellipse();
+
+                        //Give the elipse a name
+                        blueEl.Name = "blue" + (i + 1).ToString();
+
+                        //give the elipse a size
+                        blueEl.Height = size * 0.85;
+                        blueEl.Width = size * 0.85;
+
+                        //Set the vertical and horizontal alignment
+                        blueEl.HorizontalAlignment = HorizontalAlignment.Center;
+                        blueEl.VerticalAlignment = VerticalAlignment.Center;
+
+                        //Set a styling for the ellipse
+                        blueEl.Fill = new SolidColorBrush(Colors.Blue);
+                        blueEl.Stroke = new SolidColorBrush(Colors.Black);
+                        blueEl.StrokeThickness = 2;
+
+                        blueEl.SetValue(Grid.RowProperty, (iR));
+                        blueEl.SetValue(Grid.ColumnProperty, iC);
+
+                        //Add to the board
+                        //cat.Tapped += El1_Tapped;
+                        board.Children.Add(blueEl);
+                    }
+                
+            }
+
             for (int i = 0; i < numRed; i++)
             {
-                redEl = new Ellipse();
+               redEl = new Ellipse();
 
-                //Give the elipse a name
-                redEl.Name = "red" + (i + 1).ToString();
+               //Give the elipse a name
+               redEl.Name = "red" + (i + 1).ToString();
 
-                //give the elipse a size
-                redEl.Height = size * 0.85;
-                redEl.Width = size * 0.85;
+                    //give the elipse a size
+                    redEl.Height = size * 0.85;
+                    redEl.Width = size * 0.85;
 
-                //Set the vertical and horizontal alignment
-                redEl.HorizontalAlignment = HorizontalAlignment.Center;
-                redEl.VerticalAlignment = VerticalAlignment.Center;
+                    //Set the vertical and horizontal alignment
+                    redEl.HorizontalAlignment = HorizontalAlignment.Center;
+                    redEl.VerticalAlignment = VerticalAlignment.Center;
 
-                //Set a colour for the ellipse
-                redEl.Fill = new SolidColorBrush(Colors.Red);
+                    //Set a colour for the ellipse
+                    redEl.Fill = new SolidColorBrush(Colors.Red);
+                    redEl.Stroke = new SolidColorBrush(Colors.Black);
+                    redEl.StrokeThickness = 2;
 
-                int rand = randomNum();
+                    int rand = randomNum(); //Generate a random number
 
-                redEl.SetValue(Grid.RowProperty, (rand*i));
+                    redEl.SetValue(Grid.RowProperty, (rand * i)); //set the row randomly
 
-              
-                redEl.SetValue(Grid.ColumnProperty, i * 2);
-              
-                //cat.Tapped += El1_Tapped;
-                board.Children.Add(redEl);
-            }
-            // mouse = green ellipse, same width
-            // create _rows number of ellipses for cats
-            // create one for the mouse
-            Ellipse mouse = new Ellipse();
-            mouse.Name = "theMouse";
-            mouse.Height = size * 0.75;
-            mouse.Width = size * 0.75;
-            mouse.HorizontalAlignment = HorizontalAlignment.Center;
-            mouse.VerticalAlignment = VerticalAlignment.Center;
-            mouse.Fill = new SolidColorBrush(Colors.Green);
-            mouse.SetValue(Grid.RowProperty, 0);
-            if (row % 2 == 1)
-            {
-                mouse.SetValue(Grid.ColumnProperty, 1);
-            }
-            else
-            {
-                mouse.SetValue(Grid.ColumnProperty, 2);
-            }
-            //mouse.Tapped += El1_Tapped;
-            board.Children.Add(mouse);
 
-            // decide where to place on the board
-            // need one method to move a piece
-            //Ellipse cat;    // name = "cat" + _rows
+                    redEl.SetValue(Grid.ColumnProperty, i * 2); //set the column
 
-            // add event handler to el1
-            foreach (var item in board.Children)
-            {
-                if (item.GetType() == typeof(Ellipse))
-                {
-
+                    //cat.Tapped += El1_Tapped;
+                    board.Children.Add(redEl);
                 }
 
+
+
+
+
+
+                //cat.Tapped += El1_Tapped;
+                //board.Children.Add(blueEl);
             }
 
 
