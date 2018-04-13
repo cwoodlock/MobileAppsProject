@@ -132,19 +132,21 @@ namespace Project.Project_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[5];
+            _typeNameTable = new string[6];
             _typeNameTable[0] = "Project.Level1";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "Project.LevelPage";
-            _typeNameTable[4] = "Project.MainPage";
+            _typeNameTable[3] = "Project.Level2";
+            _typeNameTable[4] = "Project.LevelPage";
+            _typeNameTable[5] = "Project.MainPage";
 
-            _typeTable = new global::System.Type[5];
+            _typeTable = new global::System.Type[6];
             _typeTable[0] = typeof(global::Project.Level1);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::Project.LevelPage);
-            _typeTable[4] = typeof(global::Project.MainPage);
+            _typeTable[3] = typeof(global::Project.Level2);
+            _typeTable[4] = typeof(global::Project.LevelPage);
+            _typeTable[5] = typeof(global::Project.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -180,8 +182,9 @@ namespace Project.Project_XamlTypeInfo
         }
 
         private object Activate_0_Level1() { return new global::Project.Level1(); }
-        private object Activate_3_LevelPage() { return new global::Project.LevelPage(); }
-        private object Activate_4_MainPage() { return new global::Project.MainPage(); }
+        private object Activate_3_Level2() { return new global::Project.Level2(); }
+        private object Activate_4_LevelPage() { return new global::Project.LevelPage(); }
+        private object Activate_5_MainPage() { return new global::Project.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -208,16 +211,23 @@ namespace Project.Project_XamlTypeInfo
                 xamlType = new global::Project.Project_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  Project.LevelPage
+            case 3:   //  Project.Level2
                 userType = new global::Project.Project_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_LevelPage;
+                userType.Activator = Activate_3_Level2;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  Project.MainPage
+            case 4:   //  Project.LevelPage
                 userType = new global::Project.Project_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_MainPage;
+                userType.Activator = Activate_4_LevelPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  Project.MainPage
+                userType = new global::Project.Project_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

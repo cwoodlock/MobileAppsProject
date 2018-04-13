@@ -55,6 +55,7 @@
     </RootType>
     <RootType FullName="Project.Level1" />
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Project.Level2" />
     <RootType FullName="Project.LevelPage" />
     <RootType FullName="Project.MainPage" />
   </Roots.RootTypes>

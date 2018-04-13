@@ -31,5 +31,17 @@ namespace Project
         {
             this.Frame.GoBack();
         }
+
+        private void Level1_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Level1));
+            playSound.Play();
+        }
+
+        private void Level2_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Level2));
+            playSound.Play();
+        }
     }
 }
