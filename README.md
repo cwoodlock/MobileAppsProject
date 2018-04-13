@@ -1,4 +1,4 @@
-# RedOrBlue
+# 🔴RedOrBlue🔵
 ## Introduction
 My name is Colm Woodlock (student number: G00341460) and this is my project for the mobile applications module in 3rd year of GMIT.
 This app is a simple game where the goal is to tap all the red circles before the time runs out.
