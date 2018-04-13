@@ -13,8 +13,13 @@
         <StackPanel>
             <TextBlock Text="🔴Red Or Blue🔵" FontSize="35" Padding="50" HorizontalAlignment="Center" Foreground="AntiqueWhite" Opacity="0.5" FontFamily="Verdana" />
         </StackPanel>
-        <Button Content="Start Game" FontSize="50"            
+        <StackPanel Margin="0,200,0,0">
+            <Button Content="Start Game" FontSize="50"            
             Padding="5" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click"/>
+            <Button Content="Levels" FontSize="50" Margin="0,10,0,0"            
+            Padding="5" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Level_Click"/>
+        </StackPanel>
+        
        
 
     </Grid>

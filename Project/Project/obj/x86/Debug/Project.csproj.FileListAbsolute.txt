@@ -387,3 +387,8 @@ C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\obj\x86\Deb
 C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\obj\x86\Debug\Level1.g.cs
 C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\obj\x86\Debug\Level1.xaml
 C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\obj\x86\Debug\Level1.xbf
+C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\bin\x86\Debug\LevelPage.xbf
+C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\obj\x86\Debug\LevelPage.g.i.cs
+C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\obj\x86\Debug\LevelPage.g.cs
+C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\obj\x86\Debug\LevelPage.xaml
+C:\Users\g00341460\Desktop\project\MobileAppsProject\Project\Project\obj\x86\Debug\LevelPage.xbf

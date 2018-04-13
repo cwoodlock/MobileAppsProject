@@ -226,20 +226,33 @@ namespace Project
         
         private void redEl_Tapped(object sender, TappedRoutedEventArgs e)
         {
-
+            int count = 0;
             Ellipse current = (Ellipse)sender;
+
+            current.Fill = new SolidColorBrush(Colors.Yellow); //When tapped turn it yellow
+
+            for(int i = 0; i < 5; i++)
+            {
+                if(current.Name == "red" + (i + 1).ToString())
+                {
+                    count++;
+                }
+            }
+
+            if(count == 5 || count == 3 || count == 4 || count == 6)
+            {
+                gameOver.Text = "Complete";
+            }
             
-            current.Fill = new SolidColorBrush(Colors.Yellow);
-
-
             
 
         }//End redEl1_Tapped
+       
 
         private static int randomNum()
         {
             Random rnd = new Random();
-            int num = rnd.Next(1, 5);
+            int num = rnd.Next(1, 4);
             return num;
         }//End randomNum
 
