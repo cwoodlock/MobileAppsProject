@@ -37,12 +37,19 @@ namespace Project
             addBorders();
             setupThePieces();
 
+            timerClock();
+           
+
+        }
+
+        private void timerClock()
+        {
             timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += Timer_Tick;
             timer.Start();
-
         }
+
 
         private void Timer_Tick(object sender, object e)
         {
@@ -52,6 +59,8 @@ namespace Project
             if(increment == 0)
             {
                 timer.Stop();
+                countdownTimer.Text = " ";
+                gameOver.Text = "GAME OVER";
             }
             
         }//End Timer tick
@@ -174,7 +183,6 @@ namespace Project
                         blueEl.SetValue(Grid.ColumnProperty, iC);
 
                         //Add to the board
-                        //cat.Tapped += El1_Tapped;
                         board.Children.Add(blueEl);
                     }
                 
@@ -207,7 +215,7 @@ namespace Project
 
                     redEl.SetValue(Grid.ColumnProperty, i * 2); //set the column
 
-                    //cat.Tapped += El1_Tapped;
+                    redEl.Tapped += redEl_Tapped;
                     board.Children.Add(redEl);
                 }//end for
                
@@ -215,6 +223,18 @@ namespace Project
 
 
         } //end setUpThePieces
+        
+        private void redEl_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+
+            Ellipse current = (Ellipse)sender;
+            
+            current.Fill = new SolidColorBrush(Colors.Yellow);
+
+
+            
+
+        }//End redEl1_Tapped
 
         private static int randomNum()
         {
