@@ -132,15 +132,17 @@ namespace Project.Project_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
-            _typeNameTable[0] = "Project.MainPage";
+            _typeNameTable = new string[4];
+            _typeNameTable[0] = "Project.Level1";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "Project.MainPage";
 
-            _typeTable = new global::System.Type[3];
-            _typeTable[0] = typeof(global::Project.MainPage);
+            _typeTable = new global::System.Type[4];
+            _typeTable[0] = typeof(global::Project.Level1);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::Project.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -175,7 +177,8 @@ namespace Project.Project_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::Project.MainPage(); }
+        private object Activate_0_Level1() { return new global::Project.Level1(); }
+        private object Activate_3_MainPage() { return new global::Project.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -187,9 +190,9 @@ namespace Project.Project_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  Project.MainPage
+            case 0:   //  Project.Level1
                 userType = new global::Project.Project_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+                userType.Activator = Activate_0_Level1;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -200,6 +203,13 @@ namespace Project.Project_XamlTypeInfo
 
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::Project.Project_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 3:   //  Project.MainPage
+                userType = new global::Project.Project_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_3_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
             }
             return xamlType;

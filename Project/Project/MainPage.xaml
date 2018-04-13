@@ -13,7 +13,7 @@
             <TextBlock Text="🔴Red Or Blue🔵" FontSize="35" Padding="50" HorizontalAlignment="Center" Foreground="AntiqueWhite" Opacity="0.5" FontFamily="Verdana" />
         </StackPanel>
         <Button Content="Start Game" FontSize="50"            
-            Padding="5" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            Padding="5" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click"/>
        
 
     </Grid>
