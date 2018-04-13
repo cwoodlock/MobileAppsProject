@@ -13,6 +13,7 @@
         <StackPanel>
             <TextBlock Text="🔴Red Or Blue🔵" FontSize="20" HorizontalAlignment="Center" />
             <Button x:ConnectionId='5' Content="Back" FontSize="30"                      VerticalAlignment="Top"/>
+            <TextBlock x:ConnectionId='6' x:Name="countdownTimer" Width="100" Height="80" TextAlignment="Center" FontSize="70" Text=""/>
         </StackPanel>
         <Grid x:ConnectionId='3' x:Name="gridGame" MaxHeight="600" MaxWidth="600" Grid.Column="1"/>
         <Grid x:ConnectionId='4' x:Name="gridBoard" MaxHeight="600" MaxWidth="600" Grid.Column="1"/>

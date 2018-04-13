@@ -13,6 +13,7 @@
         <StackPanel>
             <TextBlock Text="🔴Red Or Blue🔵" FontSize="20" HorizontalAlignment="Center" />
             <Button Content="Back" FontSize="30" Click="Button_Click" VerticalAlignment="Top"/>
+            <TextBlock x:Name="countdownTimer" Width="100" Height="80" TextAlignment="Center" FontSize="70" Text=""/>
         </StackPanel>
         <Grid x:Name="gridGame" MaxHeight="600" MaxWidth="600" Grid.Column="1"/>
         <Grid x:Name="gridBoard" MaxHeight="600" MaxWidth="600" Grid.Column="1"/>

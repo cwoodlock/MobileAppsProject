@@ -24,8 +24,10 @@ namespace Project
     /// </summary>
     public sealed partial class Level1 : Page
     {
-        int row = 5;
-        int size = 75;
+        private int row = 5;
+        private int size = 75;
+        private int increment = 5;
+        private DispatcherTimer timer;
 
         public Level1()
         {
@@ -35,7 +37,24 @@ namespace Project
             addBorders();
             setupThePieces();
 
+            timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Tick += Timer_Tick;
+            timer.Start();
+
         }
+
+        private void Timer_Tick(object sender, object e)
+        {
+            increment--;
+            countdownTimer.Text = increment.ToString();
+
+            if(increment == 0)
+            {
+                timer.Stop();
+            }
+            
+        }//End Timer tick
 
         private void addBorders() //Adapted from code given to us in labs
         {   
